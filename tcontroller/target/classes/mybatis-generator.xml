@@ -3,6 +3,7 @@
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
+    <properties resource="application.properties"></properties>
     <classPathEntry location="C:\Users\三日鹤\.m2\repository\mysql\mysql-connector-java\6.0.4\mysql-connector-java-6.0.4.jar"/>
     <context id="tables" targetRuntime="MyBatis3">
         <!-- 生成 JavaBean 对象重写 toString方法 -->

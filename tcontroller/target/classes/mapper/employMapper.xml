@@ -10,12 +10,12 @@
     <result column="userid" jdbcType="INTEGER" property="userid" />
     <result column="fixid" jdbcType="INTEGER" property="fixid" />
   </resultMap>
-  <sql id="Base_Column_List">
+  <sql id="Base_Column_List_1">
     employid, employ_info, employ_img, employ_time, employ_status, userid, fixid
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List_1" />
     from employ
     where employid = #{employid,jdbcType=INTEGER}
   </select>
@@ -34,73 +34,33 @@
   <insert id="insertSelective" parameterType="com.foxcii.tcontroller.entity.employ">
     insert into employ
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="employid != null">
         employid,
-      </if>
-      <if test="employInfo != null">
         employ_info,
-      </if>
-      <if test="employImg != null">
         employ_img,
-      </if>
-      <if test="employTime != null">
         employ_time,
-      </if>
-      <if test="employStatus != null">
         employ_status,
-      </if>
-      <if test="userid != null">
         userid,
-      </if>
-      <if test="fixid != null">
         fixid,
-      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="employid != null">
         #{employid,jdbcType=INTEGER},
-      </if>
-      <if test="employInfo != null">
         #{employInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="employImg != null">
         #{employImg,jdbcType=VARCHAR},
-      </if>
-      <if test="employTime != null">
         #{employTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="employStatus != null">
         #{employStatus,jdbcType=VARCHAR},
-      </if>
-      <if test="userid != null">
         #{userid,jdbcType=INTEGER},
-      </if>
-      <if test="fixid != null">
         #{fixid,jdbcType=INTEGER},
-      </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.foxcii.tcontroller.entity.employ">
     update employ
     <set>
-      <if test="employInfo != null">
         employ_info = #{employInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="employImg != null">
         employ_img = #{employImg,jdbcType=VARCHAR},
-      </if>
-      <if test="employTime != null">
         employ_time = #{employTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="employStatus != null">
         employ_status = #{employStatus,jdbcType=VARCHAR},
-      </if>
-      <if test="userid != null">
         userid = #{userid,jdbcType=INTEGER},
-      </if>
-      <if test="fixid != null">
         fixid = #{fixid,jdbcType=INTEGER},
-      </if>
     </set>
     where employid = #{employid,jdbcType=INTEGER}
   </update>
@@ -121,12 +81,12 @@
     <result column="employ_time" jdbcType="TIMESTAMP" property="employTime" />
     <result column="employ_status" jdbcType="VARCHAR" property="employStatus" />
   </resultMap>
-  <sql id="Base_Column_List">
+  <sql id="Base_Column_List_2">
     employid, employ_info, employ_img, employ_time, employ_status
   </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-    <include refid="Base_Column_List" />
+    <include refid="Base_Column_List_2" />
     from employ
     where employid = #{employid,jdbcType=INTEGER}
   </select>
@@ -143,55 +103,27 @@
   <insert id="insertSelective" parameterType="com.foxcii.tcontroller.entity.employ">
     insert into employ
     <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="employid != null">
         employid,
-      </if>
-      <if test="employInfo != null">
         employ_info,
-      </if>
-      <if test="employImg != null">
         employ_img,
-      </if>
-      <if test="employTime != null">
         employ_time,
-      </if>
-      <if test="employStatus != null">
         employ_status,
-      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="employid != null">
         #{employid,jdbcType=INTEGER},
-      </if>
-      <if test="employInfo != null">
         #{employInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="employImg != null">
         #{employImg,jdbcType=VARCHAR},
-      </if>
-      <if test="employTime != null">
         #{employTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="employStatus != null">
         #{employStatus,jdbcType=VARCHAR},
-      </if>
     </trim>
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.foxcii.tcontroller.entity.employ">
     update employ
     <set>
-      <if test="employInfo != null">
         employ_info = #{employInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="employImg != null">
         employ_img = #{employImg,jdbcType=VARCHAR},
-      </if>
-      <if test="employTime != null">
         employ_time = #{employTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="employStatus != null">
         employ_status = #{employStatus,jdbcType=VARCHAR},
-      </if>
     </set>
     where employid = #{employid,jdbcType=INTEGER}
   </update>

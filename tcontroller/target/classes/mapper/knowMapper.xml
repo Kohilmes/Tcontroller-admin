@@ -8,12 +8,9 @@
     <result column="know_img" jdbcType="VARCHAR" property="knowImg" />
     <result column="good_num" jdbcType="INTEGER" property="goodNum" />
   </resultMap>
-  <sql id="Base_Column_List">
-    knowid, submit_time, know_info, know_img, good_num
-  </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-    <include refid="Base_Column_List" />
+    knowid, submit_time, know_info, know_img, good_num
     from know
     where knowid = #{knowid,jdbcType=INTEGER}
   </select>
@@ -88,95 +85,6 @@
       know_info = #{knowInfo,jdbcType=VARCHAR},
       know_img = #{knowImg,jdbcType=VARCHAR},
       good_num = #{goodNum,jdbcType=INTEGER}
-    where knowid = #{knowid,jdbcType=INTEGER}
-  </update>
-  <resultMap id="BaseResultMap" type="com.foxcii.tcontroller.entity.know">
-    <id column="knowid" jdbcType="INTEGER" property="knowid" />
-    <result column="submit_time" jdbcType="TIMESTAMP" property="submitTime" />
-    <result column="know_info" jdbcType="VARCHAR" property="knowInfo" />
-    <result column="know_img" jdbcType="VARCHAR" property="knowImg" />
-    <result column="goodnum" jdbcType="INTEGER" property="goodnum" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    knowid, submit_time, know_info, know_img, goodnum
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from know
-    where knowid = #{knowid,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from know
-    where knowid = #{knowid,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.foxcii.tcontroller.entity.know">
-    insert into know (knowid, submit_time, know_info, 
-      know_img, goodnum)
-    values (#{knowid,jdbcType=INTEGER}, #{submitTime,jdbcType=TIMESTAMP}, #{knowInfo,jdbcType=VARCHAR}, 
-      #{knowImg,jdbcType=VARCHAR}, #{goodnum,jdbcType=INTEGER})
-  </insert>
-  <insert id="insertSelective" parameterType="com.foxcii.tcontroller.entity.know">
-    insert into know
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="knowid != null">
-        knowid,
-      </if>
-      <if test="submitTime != null">
-        submit_time,
-      </if>
-      <if test="knowInfo != null">
-        know_info,
-      </if>
-      <if test="knowImg != null">
-        know_img,
-      </if>
-      <if test="goodnum != null">
-        goodnum,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="knowid != null">
-        #{knowid,jdbcType=INTEGER},
-      </if>
-      <if test="submitTime != null">
-        #{submitTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="knowInfo != null">
-        #{knowInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="knowImg != null">
-        #{knowImg,jdbcType=VARCHAR},
-      </if>
-      <if test="goodnum != null">
-        #{goodnum,jdbcType=INTEGER},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.foxcii.tcontroller.entity.know">
-    update know
-    <set>
-      <if test="submitTime != null">
-        submit_time = #{submitTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="knowInfo != null">
-        know_info = #{knowInfo,jdbcType=VARCHAR},
-      </if>
-      <if test="knowImg != null">
-        know_img = #{knowImg,jdbcType=VARCHAR},
-      </if>
-      <if test="goodnum != null">
-        goodnum = #{goodnum,jdbcType=INTEGER},
-      </if>
-    </set>
-    where knowid = #{knowid,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.foxcii.tcontroller.entity.know">
-    update know
-    set submit_time = #{submitTime,jdbcType=TIMESTAMP},
-      know_info = #{knowInfo,jdbcType=VARCHAR},
-      know_img = #{knowImg,jdbcType=VARCHAR},
-      goodnum = #{goodnum,jdbcType=INTEGER}
     where knowid = #{knowid,jdbcType=INTEGER}
   </update>
 </mapper>

@@ -6,12 +6,9 @@
     <result column="admin_name" jdbcType="VARCHAR" property="adminName" />
     <result column="admin_pwd" jdbcType="VARCHAR" property="adminPwd" />
   </resultMap>
-  <sql id="Base_Column_List">
-    adminid, admin_name, admin_pwd
-  </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-    <include refid="Base_Column_List" />
+    adminid, admin_name, admin_pwd
     from admin
     where adminid = #{adminid,jdbcType=INTEGER}
   </select>

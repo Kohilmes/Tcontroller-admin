@@ -8,12 +8,9 @@
     <result column="fix_info" jdbcType="VARCHAR" property="fixInfo" />
     <result column="fix_grade" jdbcType="VARCHAR" property="fixGrade" />
   </resultMap>
-  <sql id="Base_Column_List">
-    fixid, fix_name, fix_pwd, fix_info, fix_grade
-  </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-    <include refid="Base_Column_List" />
+    fixid, fix_name, fix_pwd, fix_info, fix_grade
     from fix
     where fixid = #{fixid,jdbcType=INTEGER}
   </select>

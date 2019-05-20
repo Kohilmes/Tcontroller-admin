@@ -30,7 +30,7 @@
   </insert>
   <insert id="insertSelective" parameterType="com.foxcii.tcontroller.entity.employ">
     insert into employ
-    <trim prefix="(" suffix=")" suffixOverrides=",">
+    (
         employid,
         employ_info,
         employ_img,
@@ -38,8 +38,8 @@
         employ_status,
         userid,
         fixid,
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
+    ),
+    (
         #{employid,jdbcType=INTEGER},
         #{employInfo,jdbcType=VARCHAR},
         #{employImg,jdbcType=VARCHAR},
@@ -47,7 +47,7 @@
         #{employStatus,jdbcType=VARCHAR},
         #{userid,jdbcType=INTEGER},
         #{fixid,jdbcType=INTEGER},
-    </trim>
+    ),
   </insert>
   <update id="updateByPrimaryKeySelective" parameterType="com.foxcii.tcontroller.entity.employ">
     update employ
@@ -69,64 +69,6 @@
       employ_status = #{employStatus,jdbcType=VARCHAR},
       userid = #{userid,jdbcType=INTEGER},
       fixid = #{fixid,jdbcType=INTEGER}
-    where employid = #{employid,jdbcType=INTEGER}
-  </update>
-  <resultMap id="BaseResultMap" type="com.foxcii.tcontroller.entity.employ">
-    <id column="employid" jdbcType="INTEGER" property="employid" />
-    <result column="employ_info" jdbcType="VARCHAR" property="employInfo" />
-    <result column="employ_img" jdbcType="VARCHAR" property="employImg" />
-    <result column="employ_time" jdbcType="TIMESTAMP" property="employTime" />
-    <result column="employ_status" jdbcType="VARCHAR" property="employStatus" />
-  </resultMap>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    employid, employ_info, employ_img, employ_time, employ_status
-    from employ
-    where employid = #{employid,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from employ
-    where employid = #{employid,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.foxcii.tcontroller.entity.employ">
-    insert into employ (employid, employ_info, employ_img, 
-      employ_time, employ_status)
-    values (#{employid,jdbcType=INTEGER}, #{employInfo,jdbcType=VARCHAR}, #{employImg,jdbcType=VARCHAR}, 
-      #{employTime,jdbcType=TIMESTAMP}, #{employStatus,jdbcType=VARCHAR})
-  </insert>
-  <insert id="insertSelective" parameterType="com.foxcii.tcontroller.entity.employ">
-    insert into employ
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-        employid,
-        employ_info,
-        employ_img,
-        employ_time,
-        employ_status,
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-        #{employid,jdbcType=INTEGER},
-        #{employInfo,jdbcType=VARCHAR},
-        #{employImg,jdbcType=VARCHAR},
-        #{employTime,jdbcType=TIMESTAMP},
-        #{employStatus,jdbcType=VARCHAR},
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.foxcii.tcontroller.entity.employ">
-    update employ
-    <set>
-        employ_info = #{employInfo,jdbcType=VARCHAR},
-        employ_img = #{employImg,jdbcType=VARCHAR},
-        employ_time = #{employTime,jdbcType=TIMESTAMP},
-        employ_status = #{employStatus,jdbcType=VARCHAR},
-    </set>
-    where employid = #{employid,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.foxcii.tcontroller.entity.employ">
-    update employ
-    set employ_info = #{employInfo,jdbcType=VARCHAR},
-      employ_img = #{employImg,jdbcType=VARCHAR},
-      employ_time = #{employTime,jdbcType=TIMESTAMP},
-      employ_status = #{employStatus,jdbcType=VARCHAR}
     where employid = #{employid,jdbcType=INTEGER}
   </update>
 </mapper>

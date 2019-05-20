@@ -5,12 +5,9 @@
     <id column="userid" jdbcType="INTEGER" property="userid" />
     <result column="logid" jdbcType="INTEGER" property="logid" />
   </resultMap>
-  <sql id="Base_Column_List">
-    userid, logid
-  </sql>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-    <include refid="Base_Column_List" />
+    userid, logid
     from userinfo
     where userid = #{userid,jdbcType=INTEGER}
   </select>
@@ -53,73 +50,6 @@
   <update id="updateByPrimaryKey" parameterType="com.foxcii.tcontroller.entity.user">
     update userinfo
     set logid = #{logid,jdbcType=INTEGER}
-    where userid = #{userid,jdbcType=INTEGER}
-  </update>
-  <resultMap id="BaseResultMap" type="com.foxcii.tcontroller.entity.user">
-    <id column="userid" jdbcType="INTEGER" property="userid" />
-    <result column="user_name" jdbcType="VARCHAR" property="userName" />
-    <result column="user_pwd" jdbcType="VARCHAR" property="userPwd" />
-  </resultMap>
-  <sql id="Base_Column_List">
-    userid, user_name, user_pwd
-  </sql>
-  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    <include refid="Base_Column_List" />
-    from userinfo
-    where userid = #{userid,jdbcType=INTEGER}
-  </select>
-  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
-    delete from userinfo
-    where userid = #{userid,jdbcType=INTEGER}
-  </delete>
-  <insert id="insert" parameterType="com.foxcii.tcontroller.entity.user">
-    insert into userinfo (userid, user_name, user_pwd
-      )
-    values (#{userid,jdbcType=INTEGER}, #{userName,jdbcType=VARCHAR}, #{userPwd,jdbcType=VARCHAR}
-      )
-  </insert>
-  <insert id="insertSelective" parameterType="com.foxcii.tcontroller.entity.user">
-    insert into userinfo
-    <trim prefix="(" suffix=")" suffixOverrides=",">
-      <if test="userid != null">
-        userid,
-      </if>
-      <if test="userName != null">
-        user_name,
-      </if>
-      <if test="userPwd != null">
-        user_pwd,
-      </if>
-    </trim>
-    <trim prefix="values (" suffix=")" suffixOverrides=",">
-      <if test="userid != null">
-        #{userid,jdbcType=INTEGER},
-      </if>
-      <if test="userName != null">
-        #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="userPwd != null">
-        #{userPwd,jdbcType=VARCHAR},
-      </if>
-    </trim>
-  </insert>
-  <update id="updateByPrimaryKeySelective" parameterType="com.foxcii.tcontroller.entity.user">
-    update userinfo
-    <set>
-      <if test="userName != null">
-        user_name = #{userName,jdbcType=VARCHAR},
-      </if>
-      <if test="userPwd != null">
-        user_pwd = #{userPwd,jdbcType=VARCHAR},
-      </if>
-    </set>
-    where userid = #{userid,jdbcType=INTEGER}
-  </update>
-  <update id="updateByPrimaryKey" parameterType="com.foxcii.tcontroller.entity.user">
-    update userinfo
-    set user_name = #{userName,jdbcType=VARCHAR},
-      user_pwd = #{userPwd,jdbcType=VARCHAR}
     where userid = #{userid,jdbcType=INTEGER}
   </update>
 </mapper>

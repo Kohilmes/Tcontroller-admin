@@ -1,7 +1,9 @@
 package com.foxcii.tcontroller.mapper;
 
 import com.foxcii.tcontroller.entity.admin;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface adminMapper {
     int deleteByPrimaryKey(Integer adminid);
 

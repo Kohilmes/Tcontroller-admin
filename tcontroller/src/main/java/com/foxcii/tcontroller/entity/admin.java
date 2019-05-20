@@ -30,4 +30,9 @@ public class admin {
     public void setAdminPwd(String adminPwd) {
         this.adminPwd = adminPwd == null ? null : adminPwd.trim();
     }
+
+    public admin(String adminName, String adminPwd) {
+        this.adminName = adminName;
+        this.adminPwd = adminPwd;
+    }
 }

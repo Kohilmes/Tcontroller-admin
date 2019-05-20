@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 @RestController
-@RequestMapping(value = "/admin",method = RequestMethod.POST)
+@RequestMapping(value = "/admin",method = RequestMethod.GET)
 public class adminController {
 
     @Resource
@@ -21,7 +21,8 @@ public class adminController {
     public admin login(@RequestParam("adminName")String adminName,
                        @RequestParam("adminPwd")String adminPwd){
 
-
-        return
+        admin admin=new admin(adminName,adminPwd);
+        admin adminlog=adminMapper.selectByaccount(admin);
+        return adminlog;
     }
 }

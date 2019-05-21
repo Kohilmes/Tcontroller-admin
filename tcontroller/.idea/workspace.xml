@@ -2,21 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45f92d3c-68af-40c1-9d77-afe255ada32f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/admin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/admin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/adminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/adminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/fixMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/fixMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/knowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/knowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/userMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/userMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/adminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/adminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/entity/admin.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/entity/admin.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/adminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/adminMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/adminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/adminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/entity/user.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/entity/user.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/employMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/employMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/fixMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/fixMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/knowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/knowMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/userMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/userMapper.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="334">
+              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="27" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -218,7 +209,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="958" />
     <option name="width" value="963" />
     <option name="height" value="1032" />
@@ -381,12 +372,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558156349203</updated>
       <workItem from="1558156351876" duration="11039000" />
-      <workItem from="1558419196802" duration="2084000" />
+      <workItem from="1558419196802" duration="2973000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16861000" />
+    <option name="totallyTimeSpent" value="17750000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -398,10 +389,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="767" y="0" width="770" height="825" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11394102" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.3005618" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -420,7 +411,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3299389" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3299389" />
-      <window_info anchor="bottom" id="Run" order="10" weight="0.3479491" />
+      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.2958153" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -627,8 +618,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="334">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="27" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

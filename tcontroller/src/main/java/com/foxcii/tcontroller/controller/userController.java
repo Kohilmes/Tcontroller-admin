@@ -17,8 +17,8 @@ public class userController {
     private userMapper userMapper;
 
     @RequestMapping("/login")
-    public user login(@RequestParam("adminName")String adminName,
-                      @RequestParam("adminPwd")String adminPwd){
+    public user login(@RequestParam("userName")String adminName,
+                      @RequestParam("userPwd")String adminPwd){
 
         user user=new user(adminName,adminPwd);
         user userlog=userMapper.selectByAccount(user);

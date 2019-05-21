@@ -3,14 +3,26 @@
 <mapper namespace="com.foxcii.tcontroller.mapper.userMapper">
   <resultMap id="BaseResultMap" type="com.foxcii.tcontroller.entity.user">
     <id column="userid" jdbcType="INTEGER" property="userid" />
-    <result column="logid" jdbcType="INTEGER" property="logid" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+    <result column="user_pwd" jdbcType="VARCHAR" property="userPwd"/>
+    <result column="user_phone" jdbcType="VARCHAR" property="userPhone"/>
+    <result column="user_address" jdbcType="VARCHAR" property="userAddress"/>
+    <result column="user_info" jdbcType="VARCHAR" property="userInfo"/>
+    <result column="wx_id" jdbcType="VARCHAR" property="wxId"/>
   </resultMap>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-    userid, logid
+    select *
     from userinfo
     where userid = #{userid,jdbcType=INTEGER}
   </select>
+  
+<!--  用户登录方法-->
+  <select id="selectByAccount" parameterType="com.foxcii.tcontroller.entity.user" resultMap="BaseResultMap">
+    select *
+    from userinfo
+    where user_name=#{userName,jdbcType=VARCHAR} and user_pwd=#{userPwd,jdbcType=VARCHAR}
+  </select>
+  
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from userinfo
     where userid = #{userid,jdbcType=INTEGER}

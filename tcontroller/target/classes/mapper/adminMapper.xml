@@ -12,6 +12,14 @@
     from admin
     where adminid = #{adminid,jdbcType=INTEGER}
   </select>
+
+<!--  登录方法-->
+  <select id="selectByAccount" parameterType="com.foxcii.tcontroller.entity.admin" resultMap="BaseResultMap">
+    select *
+    from admin
+    where admin_name = #{adminName,jdbcType=VARCHAR} and admin_pwd = #{adminPwd,jdbcType=VARCHAR}
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from admin
     where adminid = #{adminid,jdbcType=INTEGER}
@@ -49,4 +57,5 @@
       admin_pwd = #{adminPwd,jdbcType=VARCHAR}
     where adminid = #{adminid,jdbcType=INTEGER}
   </update>
+
 </mapper>

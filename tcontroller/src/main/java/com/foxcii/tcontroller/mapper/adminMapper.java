@@ -13,6 +13,8 @@ public interface adminMapper {
 
     admin selectByPrimaryKey(Integer adminid);
 
+    admin selectByAccount(admin record);
+
     int updateByPrimaryKeySelective(admin record);
 
     int updateByPrimaryKey(admin record);

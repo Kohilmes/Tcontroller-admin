@@ -1,7 +1,9 @@
 package com.foxcii.tcontroller.mapper;
 
 import com.foxcii.tcontroller.entity.fix;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface fixMapper {
     int deleteByPrimaryKey(Integer fixid);
 

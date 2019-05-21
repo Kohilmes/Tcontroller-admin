@@ -13,6 +13,8 @@ public class know {
 
     private Integer goodNum;
 
+    private String mdfile;
+
     public Integer getKnowid() {
         return knowid;
     }
@@ -51,5 +53,13 @@ public class know {
 
     public void setGoodNum(Integer goodNum) {
         this.goodNum = goodNum;
+    }
+
+    public String getMdfile() {
+        return mdfile;
+    }
+
+    public void setMdfile(String mdfile) {
+        this.mdfile = mdfile;
     }
 }

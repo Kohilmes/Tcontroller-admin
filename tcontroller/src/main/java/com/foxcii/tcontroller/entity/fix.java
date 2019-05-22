@@ -7,6 +7,8 @@ public class fix {
 
     private String fixPwd;
 
+    private String fixPhone;
+
     private String fixInfo;
 
     private String fixGrade;
@@ -33,6 +35,14 @@ public class fix {
 
     public void setFixPwd(String fixPwd) {
         this.fixPwd = fixPwd == null ? null : fixPwd.trim();
+    }
+
+    public String getFixPhone() {
+        return fixPhone;
+    }
+
+    public void setFixPhone(String fixPhone) {
+        this.fixPhone = fixPhone;
     }
 
     public String getFixInfo() {

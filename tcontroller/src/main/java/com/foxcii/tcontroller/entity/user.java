@@ -71,6 +71,10 @@ public class user {
         this.userPwd = userPwd;
     }
 
+    public user() {
+    }
 
-
+    public user(Integer userid) {
+        this.userid = userid;
+    }
 }

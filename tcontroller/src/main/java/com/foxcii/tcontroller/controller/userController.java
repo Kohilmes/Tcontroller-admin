@@ -25,12 +25,16 @@ public class userController {
         return userlog;
     }
     @RequestMapping("/register")
-    public int register(@RequestParam("userName")String adminName,
+    public user register(@RequestParam("userName")String adminName,
                          @RequestParam("userPwd")String adminPwd){
 
         user isReg=userMapper.selectOnlyBtAccount(adminName);
-        if (isReg!=null)return -1;
+        if (isReg!=null)return new user(-1);
         user user=new user(adminName,adminPwd);
-        return userMapper.registerOnlyAccount(user);
+        if (userMapper.registerOnlyAccount(user)==1){
+            return userMapper.selectOnlyBtAccount(adminName);
+        }else {
+            return new user();
+        }
     }
 }

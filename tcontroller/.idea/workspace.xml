@@ -4,8 +4,6 @@
     <list default="true" id="45f92d3c-68af-40c1-9d77-afe255ada32f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/user.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/user.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/userMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/userMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -71,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/user.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="569">
-              <caret line="72" selection-start-line="72" selection-end-line="72" />
+            <state relative-caret-position="371">
+              <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
               <folding>
                 <element signature="e#294#295#0" expanded="true" />
                 <element signature="e#323#324#0" expanded="true" />
@@ -102,16 +100,17 @@
                 <element signature="e#1250#1251#0" expanded="true" />
                 <element signature="e#1290#1291#0" expanded="true" />
                 <element signature="e#1322#1323#0" expanded="true" />
+                <element signature="e#1544#1545#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+            <state relative-caret-position="276">
+              <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,11 +130,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
+            <state relative-caret-position="266">
+              <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -198,10 +197,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/knowController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/fix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/user.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/userMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/user.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java" />
       </list>
     </option>
   </component>
@@ -398,12 +397,12 @@
       <updated>1558156349203</updated>
       <workItem from="1558156351876" duration="11039000" />
       <workItem from="1558419196802" duration="7076000" />
-      <workItem from="1558486412117" duration="4360000" />
+      <workItem from="1558486412117" duration="5042000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26213000" />
+    <option name="totallyTimeSpent" value="26895000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -418,7 +417,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14544237" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14544237" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -437,7 +436,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3299389" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3299389" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.3186969" />
+      <window_info anchor="bottom" id="Run" order="10" visible="true" weight="0.3186969" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -624,10 +623,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/userMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/user.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="569">
-          <caret line="72" selection-start-line="72" selection-end-line="72" />
+        <state relative-caret-position="371">
+          <caret line="76" column="33" selection-start-line="76" selection-start-column="33" selection-end-line="76" selection-end-column="33" />
           <folding>
             <element signature="e#294#295#0" expanded="true" />
             <element signature="e#323#324#0" expanded="true" />
@@ -657,34 +673,18 @@
             <element signature="e#1250#1251#0" expanded="true" />
             <element signature="e#1290#1291#0" expanded="true" />
             <element signature="e#1322#1323#0" expanded="true" />
+            <element signature="e#1544#1545#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+        <state relative-caret-position="276">
+          <caret line="34" column="61" lean-forward="true" selection-start-line="34" selection-start-column="61" selection-end-line="34" selection-end-column="61" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/userMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="142">
-          <caret line="11" column="41" lean-forward="true" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/userMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="43" column="69" selection-start-line="43" selection-start-column="69" selection-end-line="43" selection-end-column="69" />
         </state>
       </provider>
     </entry>

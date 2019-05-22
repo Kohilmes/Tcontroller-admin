@@ -24,4 +24,13 @@ public class userController {
         user userlog=userMapper.selectByAccount(user);
         return userlog;
     }
+    @RequestMapping("/register")
+    public int register(@RequestParam("userName")String adminName,
+                         @RequestParam("userPwd")String adminPwd){
+
+        user isReg=userMapper.selectOnlyBtAccount(adminName);
+        if (isReg!=null)return -1;
+        user user=new user(adminName,adminPwd);
+        return userMapper.registerOnlyAccount(user);
+    }
 }

@@ -70,4 +70,7 @@ public class user {
         this.userName = userName;
         this.userPwd = userPwd;
     }
+
+
+
 }

@@ -9,9 +9,13 @@ public interface userMapper {
 
     int insert(user record);
 
+    int registerOnlyAccount(user record);
+
     int insertSelective(user record);
 
     user selectByPrimaryKey(Integer userid);
+
+    user selectOnlyBtAccount(String userName);
 
     user selectByAccount(user record);
 

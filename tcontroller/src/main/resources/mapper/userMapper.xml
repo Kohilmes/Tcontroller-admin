@@ -15,7 +15,14 @@
     from userinfo
     where userid = #{userid,jdbcType=INTEGER}
   </select>
-  
+
+<!--  判断账号是否已经注册-->
+  <select id="selectOnlyBtAccount" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select *
+    from userinfo
+    where user_name=#{userName,jdbcType=VARCHAR}
+  </select>
+
 <!--  用户登录方法-->
   <select id="selectByAccount" parameterType="com.foxcii.tcontroller.entity.user" resultMap="BaseResultMap">
     select *
@@ -31,6 +38,12 @@
     insert into userinfo (userid, logid)
     values (#{userid,jdbcType=INTEGER}, #{logid,jdbcType=INTEGER})
   </insert>
+
+  <insert id="registerOnlyAccount" parameterType="com.foxcii.tcontroller.entity.user">
+    insert into userinfo (user_name, user_pwd)
+    values (#{userName,jdbcType=VARCHAR},#{userPwd,jdbcType=VARCHAR})
+  </insert>
+
   <insert id="insertSelective" parameterType="com.foxcii.tcontroller.entity.user">
     insert into userinfo
     <trim prefix="(" suffix=")" suffixOverrides=",">

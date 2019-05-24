@@ -11,13 +11,21 @@ public interface userMapper {
 
     int registerOnlyAccount(user record);
 
+    int registerOnlyWxid(user record);
+
     int insertSelective(user record);
 
     user selectByPrimaryKey(Integer userid);
 
+    user selectByWxid(String wxid);
+
     user selectOnlyBtAccount(String userName);
 
     user selectByAccount(user record);
+
+    int updateWxid(user record);
+
+    int updatePhoneNum(user record);
 
     int updateByPrimaryKeySelective(user record);
 

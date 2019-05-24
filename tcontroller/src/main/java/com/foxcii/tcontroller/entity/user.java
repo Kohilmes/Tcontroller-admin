@@ -71,10 +71,29 @@ public class user {
         this.userPwd = userPwd;
     }
 
+    public user(Integer userid, String userName, String userPwd) {
+        this.userid = userid;
+        this.userName = userName;
+        this.userPwd = userPwd;
+    }
+
     public user() {
     }
 
     public user(Integer userid) {
         this.userid = userid;
+    }
+
+    @Override
+    public String toString() {
+        return "user{" +
+                "userid=" + userid +
+                ", userName='" + userName + '\'' +
+                ", userPwd='" + userPwd + '\'' +
+                ", userPhone='" + userPhone + '\'' +
+                ", userAddress='" + userAddress + '\'' +
+                ", userInfo='" + userInfo + '\'' +
+                ", wxId='" + wxId + '\'' +
+                '}';
     }
 }

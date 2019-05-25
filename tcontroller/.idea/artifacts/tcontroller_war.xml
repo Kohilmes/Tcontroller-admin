@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="tcontroller:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>tcontroller</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="fix.war">
+      <element id="artifact" artifact-name="tcontroller:war exploded" />
+    </root>
+  </artifact>
+</component>

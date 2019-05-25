@@ -81,19 +81,17 @@ public class userController {
             user wxuser=this.userMapper.selectByWxid(openid);
             // uuid生成唯一key，用于维护微信小程序用户与服务端的会话
             if (wxuser==null){
-                result = GlobalResult.build(100, "wxid update", skey);
-                System.out.println(user);
+
                 user.setWxId(openid);
                 System.out.println(this.userMapper.updateWxid(user));
                 System.out.println(user);
+                user.setWxId("???");
+                result = GlobalResult.build(100, "wxid update", user);
             }else {
                 result = GlobalResult.build(200, "wxid is reg", skey);
             }
 
         }else {
-            user wxuser=this.userMapper.selectByWxid(openid);
-            wxuser.setUserPwd("???");
-            wxuser.setWxId("???");
             result = GlobalResult.build(300, "userid is binded wxid", skey);
         }
         return result;

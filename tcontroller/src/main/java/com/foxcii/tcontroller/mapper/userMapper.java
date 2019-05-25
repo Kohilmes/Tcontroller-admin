@@ -15,6 +15,8 @@ public interface userMapper {
 
     int insertSelective(user record);
 
+    user selectByPhone(String userPhone);
+
     user selectByPrimaryKey(Integer userid);
 
     user selectByWxid(String wxid);

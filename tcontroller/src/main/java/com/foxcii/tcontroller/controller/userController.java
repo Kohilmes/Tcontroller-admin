@@ -47,6 +47,7 @@ public class userController {
         }
     }
 
+
     @RequestMapping("/registerByUserid")
     public user registerByUseid(@RequestParam("userid")Integer userid,
                                 @RequestParam("userName")String adminName,
@@ -97,6 +98,33 @@ public class userController {
         return result;
     }
 
+    @RequestMapping("/bindPhoneNum")
+    public user bindPhoneNum(@RequestParam("userid")int userid,
+                             @RequestParam("userPhone")String userPhone){
+
+        user user=this.userMapper.selectByPhone(userPhone);
+        if (user!=null){
+            user=new user(-1);
+            return user;
+        }else {
+            user=new user();
+            user.setUserid(userid);
+            user.setUserPhone(userPhone);
+            if (this.userMapper.updatePhoneNum(user)==1){
+                user=this.userMapper.selectByPhone(userPhone);
+                user.setUserPwd("???");
+                if (user.getWxId()!=null){
+                    user.setWxId("???");
+                }
+                return user;
+            }
+            else {
+                user.setUserid(null);
+                return user;
+            }
+        }
+    }
+
     @RequestMapping("/wx/login")
     public GlobalResult user_login(@RequestParam("code")String code){
         JSONObject SessionKeyOpenId = WechatUtil.getSessionKeyOrOpenId(code);
@@ -109,7 +137,9 @@ public class userController {
 
         String skey = UUID.randomUUID().toString();
         GlobalResult result;
-        if (user.getUserid()==null){
+        if (user==null){
+            user=new user();
+            user.setWxId(openid);
             if (userMapper.registerOnlyWxid(user)==1){
                 user = this.userMapper.selectByWxid(openid);
                 return GlobalResult.build(50, "wxid first login", user);

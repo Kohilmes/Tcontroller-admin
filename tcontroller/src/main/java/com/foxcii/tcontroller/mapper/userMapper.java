@@ -3,6 +3,8 @@ package com.foxcii.tcontroller.mapper;
 import com.foxcii.tcontroller.entity.user;
 import org.apache.ibatis.annotations.Mapper;
 
+import java.util.List;
+
 @Mapper
 public interface userMapper {
     int deleteByPrimaryKey(Integer userid);
@@ -24,6 +26,8 @@ public interface userMapper {
     user selectOnlyBtAccount(String userName);
 
     user selectByAccount(user record);
+
+    List<user> selectAll();
 
     int updateWxid(user record);
 

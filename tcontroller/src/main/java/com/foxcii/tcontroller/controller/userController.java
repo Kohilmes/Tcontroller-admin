@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
+import java.util.List;
 import java.util.UUID;
 
 @RestController
@@ -154,5 +155,11 @@ public class userController {
             result = GlobalResult.build(100, "login", wxuser);
         }
         return result;
+    }
+
+    @RequestMapping("/selectAll")
+    public List<user> user_selectAll(){
+        List<user> users=this.userMapper.selectAll();
+        return  users;
     }
 }

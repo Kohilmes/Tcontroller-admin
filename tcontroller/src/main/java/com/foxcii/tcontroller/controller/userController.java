@@ -83,8 +83,7 @@ public class userController {
             if (wxuser==null){
 
                 user.setWxId(openid);
-                System.out.println(this.userMapper.updateWxid(user));
-                System.out.println(user);
+                this.userMapper.updateWxid(user);
                 user.setWxId("???");
                 result = GlobalResult.build(100, "wxid update", user);
             }else {
@@ -130,7 +129,6 @@ public class userController {
         String openid = SessionKeyOpenId.getString("openid");
         String sessionKey = SessionKeyOpenId.getString("session_key");
 
-        System.out.println(SessionKeyOpenId);
         // 5.根据返回的User实体类，判断用户是否是新用户，是的话，将用户信息存到数据库；不是的话，更新最新登录时间
         user user = this.userMapper.selectByWxid(openid);
 

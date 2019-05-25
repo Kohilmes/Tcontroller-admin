@@ -29,6 +29,8 @@ public interface userMapper {
 
     List<user> selectAll();
 
+//    user selectByPrimaryKey(Integer userid);
+
     int updateWxid(user record);
 
     int updatePhoneNum(user record);

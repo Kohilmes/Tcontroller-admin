@@ -162,4 +162,12 @@ public class userController {
         List<user> users=this.userMapper.selectAll();
         return  users;
     }
+
+    @RequestMapping("/selectByuserId")
+    public user selectByPrimaryKey(@RequestParam("userid")int userid){
+
+        user user=this.userMapper.selectByPrimaryKey(userid);
+
+        return user;
+    }
 }

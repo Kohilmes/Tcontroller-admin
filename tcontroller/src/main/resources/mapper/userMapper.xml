@@ -23,6 +23,14 @@
     where wx_id=#{wxId,jdbcType=VARCHAR}
   </select>
 
+
+  <select id="selectByPhone" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select *
+    from userinfo
+    where user_phone=#{userPhone,jdbcType=VARCHAR}
+  </select>
+
+
 <!--  判断账号是否已经注册-->
   <select id="selectOnlyBtAccount" parameterType="java.lang.String" resultMap="BaseResultMap">
     select *

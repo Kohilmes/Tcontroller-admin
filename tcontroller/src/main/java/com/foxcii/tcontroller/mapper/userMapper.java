@@ -33,6 +33,8 @@ public interface userMapper {
 
     int updatePhoneNum(user record);
 
+    int updatePwd(user record);
+
     int updateByPrimaryKeySelective(user record);
 
     int updateByPrimaryKey(user record);

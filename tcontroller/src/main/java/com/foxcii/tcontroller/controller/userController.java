@@ -22,6 +22,28 @@ public class userController {
     @Resource
     private userMapper userMapper;
 
+    @RequestMapping("/isAccount")
+    public user isAccount(@RequestParam("userName")String userName){
+        user user=this.userMapper.selectOnlyBtAccount(userName);
+        if (user!=null){
+            user islive=new user();
+            islive.setUserid(user.getUserid());
+            islive.setUserName(user.getUserName());
+            islive.setUserPhone(user.getUserPhone());
+            return islive;
+        }else {
+            return user;
+        }
+    }
+    @RequestMapping("/updatePwd")
+    public int updatePwd(@RequestParam("userName")String adminName,
+                      @RequestParam("userPwd")String adminPwd){
+
+        user user=new user(adminName,adminPwd);
+        return userMapper.updatePwd(user);
+    }
+
+
     @RequestMapping("/login")
     public user login(@RequestParam("userName")String adminName,
                       @RequestParam("userPwd")String adminPwd){

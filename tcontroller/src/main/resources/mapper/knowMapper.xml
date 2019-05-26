@@ -3,7 +3,7 @@
 <mapper namespace="com.foxcii.tcontroller.mapper.knowMapper">
   <resultMap id="BaseResultMap" type="com.foxcii.tcontroller.entity.know">
     <id column="knowid" jdbcType="INTEGER" property="knowid" />
-    <result column="submit_time" jdbcType="TIMESTAMP" property="submitTime" />
+    <result column="submit_time" jdbcType="VARCHAR" property="submitTime" />
     <result column="know_info" jdbcType="VARCHAR" property="knowInfo" />
     <result column="know_img" jdbcType="VARCHAR" property="knowImg" />
     <result column="good_num" jdbcType="INTEGER" property="goodNum" />
@@ -17,7 +17,7 @@
 
 <!--  获取所有小知识-->
   <select id="selectAll" resultMap="BaseResultMap">
-    select *
+    select knowid,left(submit_time,10)submit_time,know_info,know_img,good_num,mdfile
     from know
   </select>
   

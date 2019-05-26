@@ -94,7 +94,13 @@
     set user_phone=#{userPhone,jdbcType=INTEGER}
     where userid=#{userid,jdbcType=INTEGER}
   </update>
-  
+
+  <update id="updatePwd" parameterType="com.foxcii.tcontroller.entity.user">
+    update userinfo
+    set user_pwd=#{userPwd,jdbcType=VARCHAR}
+    where user_name=#{userName,jdbcType=VARCHAR}
+  </update>
+
   <update id="updateWxid" parameterType="com.foxcii.tcontroller.entity.user">
     update userinfo
     set wx_id=#{wxId,jdbcType=VARCHAR}

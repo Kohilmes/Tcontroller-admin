@@ -12,8 +12,8 @@
     <result column="fixid" jdbcType="INTEGER" property="fixid" />
   </resultMap>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
-    select 
-   employid, employ_info, employ_img, employ_time, employ_status, userid, fixid
+    select
+   employid, employ_info, employ_img, left(employ_time,16)employ_time, employ_status, employ_address,userid, fixid
     from employ
     where employid = #{employid,jdbcType=INTEGER}
   </select>

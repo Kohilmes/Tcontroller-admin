@@ -24,4 +24,10 @@ public class employController {
         List<employ> employs=employMapper.selectByUserid(userid);
         return employs;
     }
+
+    @RequestMapping("/selectByEmployid")
+    public employ selectByEmployid(@RequestParam("employid")int employid){
+        employ employ=employMapper.selectByPrimaryKey(employid);
+        return employ;
+    }
 }

@@ -4,13 +4,14 @@
   <resultMap id="BaseResultMap" type="com.foxcii.tcontroller.entity.fix">
     <id column="fixid" jdbcType="INTEGER" property="fixid" />
     <result column="fix_name" jdbcType="VARCHAR" property="fixName" />
+    <result column="fix_phone" jdbcType="VARCHAR" property="fixPhone" />
     <result column="fix_pwd" jdbcType="VARCHAR" property="fixPwd" />
     <result column="fix_info" jdbcType="VARCHAR" property="fixInfo" />
     <result column="fix_grade" jdbcType="VARCHAR" property="fixGrade" />
   </resultMap>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-    fixid, fix_name, fix_pwd, fix_info, fix_grade
+    fixid, fix_name, fix_phone, fix_info, fix_grade
     from fix
     where fixid = #{fixid,jdbcType=INTEGER}
   </select>

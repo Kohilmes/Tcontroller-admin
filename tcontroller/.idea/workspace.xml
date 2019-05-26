@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45f92d3c-68af-40c1-9d77-afe255ada32f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/know.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/know.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/entity/know.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/entity/know.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/knowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/knowMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="45f92d3c-68af-40c1-9d77-afe255ada32f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -403,7 +397,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1023" y="0" width="1026" height="1113" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25619835" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

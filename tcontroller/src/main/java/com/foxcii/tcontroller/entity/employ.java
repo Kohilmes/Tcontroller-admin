@@ -9,7 +9,9 @@ public class employ {
 
     private String employImg;
 
-    private Date employTime;
+    private String employAddress;
+
+    private String employTime;
 
     private String employStatus;
 
@@ -41,11 +43,11 @@ public class employ {
         this.employImg = employImg == null ? null : employImg.trim();
     }
 
-    public Date getEmployTime() {
+    public String getEmployTime() {
         return employTime;
     }
 
-    public void setEmployTime(Date employTime) {
+    public void setEmployTime(String employTime) {
         this.employTime = employTime;
     }
 
@@ -71,5 +73,13 @@ public class employ {
 
     public void setFixid(Integer fixid) {
         this.fixid = fixid;
+    }
+
+    public String getEmployAddress() {
+        return employAddress;
+    }
+
+    public void setEmployAddress(String employAddress) {
+        this.employAddress = employAddress;
     }
 }

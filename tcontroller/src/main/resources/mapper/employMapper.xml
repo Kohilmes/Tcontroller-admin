@@ -5,7 +5,8 @@
     <id column="employid" jdbcType="INTEGER" property="employid" />
     <result column="employ_info" jdbcType="VARCHAR" property="employInfo" />
     <result column="employ_img" jdbcType="VARCHAR" property="employImg" />
-    <result column="employ_time" jdbcType="TIMESTAMP" property="employTime" />
+      <result column="employ_address" jdbcType="VARCHAR" property="employAddress" />
+    <result column="employ_time" jdbcType="VARCHAR" property="employTime" />
     <result column="employ_status" jdbcType="VARCHAR" property="employStatus" />
     <result column="userid" jdbcType="INTEGER" property="userid" />
     <result column="fixid" jdbcType="INTEGER" property="fixid" />
@@ -16,6 +17,14 @@
     from employ
     where employid = #{employid,jdbcType=INTEGER}
   </select>
+
+    <select id="selectByUserid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select employid,employ_info,employ_img,left(employ_time,16)employ_time,employ_status,employ_address,userid,fixid
+        from employ
+        where userid=#{userid,jdbcType=INTEGER}
+    </select>
+
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from employ
     where employid = #{employid,jdbcType=INTEGER}
@@ -71,4 +80,5 @@
       fixid = #{fixid,jdbcType=INTEGER}
     where employid = #{employid,jdbcType=INTEGER}
   </update>
+
 </mapper>

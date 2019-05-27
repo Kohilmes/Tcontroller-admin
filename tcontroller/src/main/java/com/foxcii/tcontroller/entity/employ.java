@@ -82,4 +82,11 @@ public class employ {
     public void setEmployAddress(String employAddress) {
         this.employAddress = employAddress;
     }
+
+    public employ(String employInfo, String employAddress, String employTime, Integer userid) {
+        this.employInfo = employInfo;
+        this.employAddress = employAddress;
+        this.employTime = employTime;
+        this.userid = userid;
+    }
 }

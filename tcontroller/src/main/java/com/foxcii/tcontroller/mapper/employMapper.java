@@ -13,6 +13,8 @@ public interface employMapper {
 
     int insertSelective(employ record);
 
+    int insertEmploy(employ record);
+
     employ selectByPrimaryKey(Integer employid);
 
     List<employ> selectByUserid(Integer userid);

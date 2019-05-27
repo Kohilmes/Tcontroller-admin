@@ -30,4 +30,14 @@ public class employController {
         employ employ=employMapper.selectByPrimaryKey(employid);
         return employ;
     }
+
+    @RequestMapping("/addEmploy")
+    public int addEmploy(@RequestParam("employInfo")String employinfo,
+                         @RequestParam("employTime")String employTime,
+                         @RequestParam("employAddress")String employAddress,
+                         @RequestParam("userid")int userid){
+
+        employ employ=new employ(employinfo,employTime,employAddress,userid);
+        return  this.employMapper.insertEmploy(employ);
+    }
 }

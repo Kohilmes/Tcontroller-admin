@@ -57,7 +57,13 @@
         #{userid,jdbcType=INTEGER},
         #{fixid,jdbcType=INTEGER},
     ),
-  </insert>
+  </insert >
+
+    <insert id="insertEmploy" parameterType="com.foxcii.tcontroller.entity.employ">
+        insert into employ (employ_info,employ_address,employ_time,userid)
+        values (#{employInfo,jdbcType=VARCHAR},#{employTime,jdbcType=VARCHAR},#{employAddress,jdbcType=VARCHAR},#{userid,jdbcType=INTEGER})
+    </insert>
+
   <update id="updateByPrimaryKeySelective" parameterType="com.foxcii.tcontroller.entity.employ">
     update employ
     <set>

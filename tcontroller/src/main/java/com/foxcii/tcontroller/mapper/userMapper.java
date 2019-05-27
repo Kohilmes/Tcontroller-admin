@@ -35,6 +35,8 @@ public interface userMapper {
 
     int updatePwd(user record);
 
+    int updateAddress(user record);
+
     int updateByPrimaryKeySelective(user record);
 
     int updateByPrimaryKey(user record);

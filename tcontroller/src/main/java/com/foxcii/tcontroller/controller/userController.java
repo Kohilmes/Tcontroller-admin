@@ -43,6 +43,15 @@ public class userController {
         return userMapper.updatePwd(user);
     }
 
+    @RequestMapping("/updateAddress")
+    public int updateAddress(@RequestParam("userid")Integer userid,
+                         @RequestParam("userAddress")String userAddress){
+
+        user user=new user();
+        user.setUserid(userid);
+        user.setUserAddress(userAddress);
+        return userMapper.updateAddress(user);
+    }
 
     @RequestMapping("/login")
     public user login(@RequestParam("userName")String adminName,

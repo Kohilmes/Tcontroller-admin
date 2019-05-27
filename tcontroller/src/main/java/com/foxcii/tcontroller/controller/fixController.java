@@ -16,7 +16,7 @@ public class fixController {
     @Resource
     private fixMapper fixMapper;
 
-    @RequestMapping("/selectByFixid")
+    @RequestMapping("/selectByfixid")
     public fix selectByFixid(@RequestParam("fixid")Integer fixid){
         fix fix=fixMapper.selectByPrimaryKey(fixid);
         return fix;

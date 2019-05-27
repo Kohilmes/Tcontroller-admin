@@ -46,7 +46,7 @@ public class employController {
 
     @RequestMapping("/updatestafix")
     public employ updatestafix(@RequestParam("employid")int employid,
-                               @RequestParam("employStatus")int status,
+                               @RequestParam("employStatus")String status,
                                @RequestParam("fixid")int fixid){
 
         employ employ=this.employMapper.selectByPrimaryKey(employid);

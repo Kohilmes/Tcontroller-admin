@@ -5,7 +5,7 @@ import java.util.Date;
 public class know {
     private Integer knowid;
 
-    private Date submitTime;
+    private String submitTime;
 
     private String knowInfo;
 
@@ -23,11 +23,11 @@ public class know {
         this.knowid = knowid;
     }
 
-    public Date getSubmitTime() {
+    public String getSubmitTime() {
         return submitTime;
     }
 
-    public void setSubmitTime(Date submitTime) {
+    public void setSubmitTime(String submitTime) {
         this.submitTime = submitTime;
     }
 

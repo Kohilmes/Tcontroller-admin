@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="45f92d3c-68af-40c1-9d77-afe255ada32f" name="Default Changelist" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/employMapper.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/know.java" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/know.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" afterPath="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -53,18 +51,18 @@
       <file leaf-file-name="employController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="925">
-              <caret line="48" column="71" lean-forward="true" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
+            <state relative-caret-position="112">
+              <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="employMapper.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="employMapper.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+            <state relative-caret-position="525">
+              <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -73,8 +71,8 @@
       <file leaf-file-name="employMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/employMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="20" column="59" lean-forward="false" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+            <state relative-caret-position="362">
+              <caret line="81" column="5" lean-forward="false" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
               <folding>
                 <marker date="1558965354281" expanded="true" signature="999:1187" ph="select emplo... employ" />
                 <marker date="1558965354281" expanded="true" signature="1268:1406" ph="select emplo... employ" />
@@ -89,10 +87,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="knowMapper.xml" pinned="false" current-in-tab="true">
+      <file leaf-file-name="knowMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="-1388">
               <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
               <folding>
                 <marker date="1558968923080" expanded="true" signature="822:890" ph="select * fro... know" />
@@ -109,8 +107,8 @@
       <file leaf-file-name="knowMapper.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/knowMapper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+            <state relative-caret-position="450">
+              <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -122,22 +120,6 @@
             <state relative-caret-position="125">
               <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="know.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/know.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
-              <caret line="25" column="35" lean-forward="false" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-              <folding>
-                <element signature="e#473#474#0" expanded="true" />
-                <element signature="e#525#526#0" expanded="true" />
-                <element signature="e#569#570#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
-                <element signature="e#756#757#0" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -175,7 +157,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/adminMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/adminController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/adminMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/knowMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/knowController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/fix.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/WxCheckController.java" />
@@ -195,10 +176,11 @@
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/userController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/employ.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/employMapper.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/know.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/knowMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java" />
       </list>
     </option>
   </component>
@@ -444,12 +426,12 @@
       <workItem from="1558767786592" duration="351000" />
       <workItem from="1558774169911" duration="8690000" />
       <workItem from="1558849391790" duration="7454000" />
-      <workItem from="1558942427500" duration="6054000" />
+      <workItem from="1558942427500" duration="6156000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71555000" />
+    <option name="totallyTimeSpent" value="71657000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -978,27 +960,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="925">
-          <caret line="48" column="71" lean-forward="true" selection-start-line="48" selection-start-column="71" selection-end-line="48" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/knowController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
+        <state relative-caret-position="-1388">
+          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
+          <folding>
+            <marker date="1558968923080" expanded="true" signature="822:890" ph="select * fro... know" />
+            <marker date="1558968923080" expanded="true" signature="977:1071" ph="select * fro... know" />
+            <marker date="1558968923080" expanded="true" signature="1160:1222" ph="delete from " />
+            <marker date="1558968923080" expanded="true" signature="1313:1558" ph="insert into know... " />
+            <marker date="1558968923080" expanded="true" signature="2671:3139" ph="update know " />
+            <marker date="1558968923080" expanded="true" signature="3242:3494" ph="update know " />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,18 +989,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="42" column="0" lean-forward="true" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/knowController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="12" column="29" lean-forward="false" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/knowMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="17" column="15" lean-forward="false" selection-start-line="17" selection-start-column="15" selection-end-line="17" selection-end-column="15" />
+        <state relative-caret-position="450">
+          <caret line="21" column="40" lean-forward="true" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/employMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="20" column="59" lean-forward="false" selection-start-line="20" selection-start-column="59" selection-end-line="20" selection-end-column="59" />
+        <state relative-caret-position="362">
+          <caret line="81" column="5" lean-forward="false" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
           <folding>
             <marker date="1558965354281" expanded="true" signature="999:1187" ph="select emplo... employ" />
             <marker date="1558965354281" expanded="true" signature="1268:1406" ph="select emplo... employ" />
@@ -1041,18 +1030,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="9" column="67" lean-forward="true" selection-start-line="9" selection-start-column="67" selection-end-line="9" selection-end-column="67" />
-          <folding>
-            <marker date="1558968923080" expanded="true" signature="822:890" ph="select * fro... know" />
-            <marker date="1558968923080" expanded="true" signature="977:1071" ph="select * fro... know" />
-            <marker date="1558968923080" expanded="true" signature="1160:1222" ph="delete from " />
-            <marker date="1558968923080" expanded="true" signature="1313:1558" ph="insert into know... " />
-            <marker date="1558968923080" expanded="true" signature="2671:3139" ph="update know " />
-            <marker date="1558968923080" expanded="true" signature="3242:3494" ph="update know " />
-          </folding>
+        <state relative-caret-position="525">
+          <caret line="25" column="1" lean-forward="true" selection-start-line="25" selection-start-column="1" selection-end-line="25" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

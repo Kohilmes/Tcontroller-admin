@@ -22,5 +22,5 @@ public interface employMapper {
 
     int updateByPrimaryKey(employ record);
 
-    int updatestafix(employ record);
+//    int updatestafix(employ record);
 }

@@ -5,7 +5,7 @@
     <id column="employid" jdbcType="INTEGER" property="employid" />
     <result column="employ_info" jdbcType="VARCHAR" property="employInfo" />
     <result column="employ_img" jdbcType="VARCHAR" property="employImg" />
-    <result column="employ_time" jdbcType="TIMESTAMP" property="employTime" />
+    <result column="employ_time" jdbcType="VARCHAR" property="employTime" />
     <result column="employ_status" jdbcType="VARCHAR" property="employStatus" />
       <result column="employ_address" jdbcType="VARCHAR" property="employAddress" />
     <result column="userid" jdbcType="INTEGER" property="userid" />
@@ -13,12 +13,12 @@
   </resultMap>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-   employid, employ_info, employ_img, employ_time, employ_status,employ_address, userid, fixid
+   employid, employ_info, employ_img, left(employ_time,16)employ_time, employ_status, employ_address,userid, fixid
     from employ
     where employid = #{employid,jdbcType=INTEGER}
   </select>
     <select id="selectAllemploy" resultMap="BaseResultMap">
-        select employid, employ_info, employ_img, employ_time, employ_status, employ_address,userid, fixid
+        select employid, employ_info, employ_img, left(employ_time,16)employ_time, employ_status, employ_address,userid, fixid
         from employ
     </select>
 
@@ -77,4 +77,11 @@
       fixid = #{fixid,jdbcType=INTEGER}
     where employid = #{employid,jdbcType=INTEGER}
   </update>
+
+    <update id="updatestafix" parameterType="com.foxcii.tcontroller.entity.employ">
+        update employ
+        set employ_status = #{employStatus,jdbcType=VARCHAR},
+        fixid = #{fixid,jdbcType=INTEGER}
+        where employid = #{employid,jdbcType=INTEGER}
+    </update>
 </mapper>

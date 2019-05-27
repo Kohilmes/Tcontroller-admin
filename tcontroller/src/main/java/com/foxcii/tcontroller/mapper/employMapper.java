@@ -21,4 +21,6 @@ public interface employMapper {
     int updateByPrimaryKeySelective(employ record);
 
     int updateByPrimaryKey(employ record);
+
+    int updatestafix(employ record);
 }

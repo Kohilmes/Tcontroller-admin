@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import javax.annotation.Resource;
 
 @RestController
-@RequestMapping(value = "/fix",method = RequestMethod.GET)
+@RequestMapping(value = "/fixer",method = RequestMethod.GET)
 public class fixController {
 
     @Resource

@@ -94,4 +94,10 @@
       good_num = #{goodNum,jdbcType=INTEGER}
     where knowid = #{knowid,jdbcType=INTEGER}
   </update>
+
+  <update id="seeKnow" parameterType="java.lang.Integer">
+    update know
+    set good_num = good_num+1
+    where knowid = #{knowid,jdbcType=INTEGER}
+  </update>
 </mapper>

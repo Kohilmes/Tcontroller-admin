@@ -4,6 +4,7 @@ import com.foxcii.tcontroller.entity.know;
 import com.foxcii.tcontroller.mapper.knowMapper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
@@ -22,5 +23,9 @@ public class knowController {
         return knows;
     }
 
+    @RequestMapping("/seeKnow")
+    public int seeKnow(@RequestParam("knowid")int knowid){
+        return this.knowMapper.seeKnow(knowid);
+    }
 
 }

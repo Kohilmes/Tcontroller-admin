@@ -20,4 +20,6 @@ public interface knowMapper {
     int updateByPrimaryKeySelective(know record);
 
     int updateByPrimaryKey(know record);
+
+    int seeKnow(Integer knowid);
 }

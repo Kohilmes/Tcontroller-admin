@@ -1,21 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45f92d3c-68af-40c1-9d77-afe255ada32f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/knowController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/knowController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/knowMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/knowMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/controller/knowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/controller/knowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/knowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/knowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/knowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/knowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/controller/knowController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/controller/knowController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/mapper/knowMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/mapper/knowMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/knowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/knowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.foxcii.tcontroller.TcontrollerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.foxcii.tcontroller.TcontrollerApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.foxcii.tcontroller.TcontrollerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.foxcii.tcontroller.TcontrollerApplicationTests.txt" afterDir="false" />
-    </list>
+    <list default="true" id="45f92d3c-68af-40c1-9d77-afe255ada32f" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -417,12 +403,12 @@
       <workItem from="1558589262912" duration="15903000" />
       <workItem from="1558755453529" duration="4165000" />
       <workItem from="1558767786592" duration="20258000" />
-      <workItem from="1558916258192" duration="15297000" />
+      <workItem from="1558916258192" duration="15330000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="84561000" />
+    <option name="totallyTimeSpent" value="84594000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -455,7 +441,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3299389" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.31444758" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.31444758" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />

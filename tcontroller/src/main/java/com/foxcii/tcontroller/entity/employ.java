@@ -89,4 +89,18 @@ public class employ {
         this.employTime = employTime;
         this.userid = userid;
     }
+
+    public employ(Integer employid, String employInfo, String employImg, String employAddress, String employTime, String employStatus, Integer userid, Integer fixid) {
+        this.employid = employid;
+        this.employInfo = employInfo;
+        this.employImg = employImg;
+        this.employAddress = employAddress;
+        this.employTime = employTime;
+        this.employStatus = employStatus;
+        this.userid = userid;
+        this.fixid = fixid;
+    }
+
+    public employ() {
+    }
 }

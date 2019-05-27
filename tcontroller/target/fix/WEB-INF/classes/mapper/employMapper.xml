@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.foxcii.tcontroller.mapper.employMapper">
+  <resultMap id="BaseResultMap" type="com.foxcii.tcontroller.entity.employ">
+    <id column="employid" jdbcType="INTEGER" property="employid" />
+    <result column="employ_info" jdbcType="VARCHAR" property="employInfo" />
+    <result column="employ_img" jdbcType="VARCHAR" property="employImg" />
+      <result column="employ_address" jdbcType="VARCHAR" property="employAddress" />
+    <result column="employ_time" jdbcType="VARCHAR" property="employTime" />
+    <result column="employ_status" jdbcType="VARCHAR" property="employStatus" />
+    <result column="userid" jdbcType="INTEGER" property="userid" />
+    <result column="fixid" jdbcType="INTEGER" property="fixid" />
+  </resultMap>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select
+   employid, employ_info, employ_img, left(employ_time,16)employ_time, employ_status, employ_address,userid, fixid
+    from employ
+    where employid = #{employid,jdbcType=INTEGER}
+  </select>
+
+    <select id="selectByUserid" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+        select employid,employ_info,employ_img,left(employ_time,16)employ_time,employ_status,employ_address,userid,fixid
+        from employ
+        where userid=#{userid,jdbcType=INTEGER}
+    </select>
+
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from employ
+    where employid = #{employid,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.foxcii.tcontroller.entity.employ">
+    insert into employ (employid, employ_info, employ_img, 
+      employ_time, employ_status, userid, 
+      fixid)
+    values (#{employid,jdbcType=INTEGER}, #{employInfo,jdbcType=VARCHAR}, #{employImg,jdbcType=VARCHAR}, 
+      #{employTime,jdbcType=TIMESTAMP}, #{employStatus,jdbcType=VARCHAR}, #{userid,jdbcType=INTEGER}, 
+      #{fixid,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.foxcii.tcontroller.entity.employ">
+    insert into employ
+    (
+        employid,
+        employ_info,
+        employ_img,
+        employ_time,
+        employ_status,
+        userid,
+        fixid,
+    ),
+    (
+        #{employid,jdbcType=INTEGER},
+        #{employInfo,jdbcType=VARCHAR},
+        #{employImg,jdbcType=VARCHAR},
+        #{employTime,jdbcType=TIMESTAMP},
+        #{employStatus,jdbcType=VARCHAR},
+        #{userid,jdbcType=INTEGER},
+        #{fixid,jdbcType=INTEGER},
+    ),
+  </insert >
+
+    <insert id="insertEmploy" parameterType="com.foxcii.tcontroller.entity.employ">
+        insert into employ (employ_info,employ_address,employ_time,userid)
+        values (#{employInfo,jdbcType=VARCHAR},#{employTime,jdbcType=VARCHAR},#{employAddress,jdbcType=VARCHAR},#{userid,jdbcType=INTEGER})
+    </insert>
+
+  <update id="updateByPrimaryKeySelective" parameterType="com.foxcii.tcontroller.entity.employ">
+    update employ
+    <set>
+        employ_info = #{employInfo,jdbcType=VARCHAR},
+        employ_img = #{employImg,jdbcType=VARCHAR},
+        employ_time = #{employTime,jdbcType=TIMESTAMP},
+        employ_status = #{employStatus,jdbcType=VARCHAR},
+        userid = #{userid,jdbcType=INTEGER},
+        fixid = #{fixid,jdbcType=INTEGER},
+    </set>
+    where employid = #{employid,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.foxcii.tcontroller.entity.employ">
+    update employ
+    set employ_info = #{employInfo,jdbcType=VARCHAR},
+      employ_img = #{employImg,jdbcType=VARCHAR},
+      employ_time = #{employTime,jdbcType=TIMESTAMP},
+      employ_status = #{employStatus,jdbcType=VARCHAR},
+      userid = #{userid,jdbcType=INTEGER},
+      fixid = #{fixid,jdbcType=INTEGER}
+    where employid = #{employid,jdbcType=INTEGER}
+  </update>
+
+</mapper>

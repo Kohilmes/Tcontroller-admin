@@ -7,15 +7,21 @@
     <result column="employ_img" jdbcType="VARCHAR" property="employImg" />
     <result column="employ_time" jdbcType="TIMESTAMP" property="employTime" />
     <result column="employ_status" jdbcType="VARCHAR" property="employStatus" />
+      <result column="employ_address" jdbcType="VARCHAR" property="employAddress" />
     <result column="userid" jdbcType="INTEGER" property="userid" />
     <result column="fixid" jdbcType="INTEGER" property="fixid" />
   </resultMap>
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select 
-   employid, employ_info, employ_img, employ_time, employ_status, userid, fixid
+   employid, employ_info, employ_img, employ_time, employ_status,employ_address, userid, fixid
     from employ
     where employid = #{employid,jdbcType=INTEGER}
   </select>
+    <select id="selectAllemploy" resultMap="BaseResultMap">
+        select employid, employ_info, employ_img, employ_time, employ_status, employ_address,userid, fixid
+        from employ
+    </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from employ
     where employid = #{employid,jdbcType=INTEGER}

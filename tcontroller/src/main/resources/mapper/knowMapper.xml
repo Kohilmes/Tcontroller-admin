@@ -100,4 +100,17 @@
     set good_num = good_num+1
     where knowid = #{knowid,jdbcType=INTEGER}
   </update>
+
+  <update id="updatestafix" parameterType="com.foxcii.tcontroller.entity.employ">
+        update employ
+        set employ_status = #{employStatus,jdbcType=VARCHAR},
+        fixid = #{fixid,jdbcType=INTEGER}
+        where employid = #{employid,jdbcType=INTEGER}
+    </update>
+  <update id="updatesta" parameterType="com.foxcii.tcontroller.entity.employ">
+        update employ
+        set employ_status = #{employStatus,jdbcType=VARCHAR}
+        where employid = #{employid,jdbcType=INTEGER}
+    </update>
+
 </mapper>

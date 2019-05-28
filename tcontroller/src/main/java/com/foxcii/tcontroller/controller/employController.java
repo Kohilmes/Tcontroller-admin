@@ -62,14 +62,22 @@ public class employController {
         return null;
     }
 
-//    @RequestMapping("/updatestafix")
-//    public employ updatestafix(@RequestParam("employid")int employid,
-//                               @RequestParam("employStatus")String status,
-//                               @RequestParam("fixid")int fixid){
-//
+    @RequestMapping("/updatestafix")
+    public int updatestafix(@RequestParam("employid")int employid,
+                            @RequestParam("employStatus")String status,
+                            @RequestParam("fixid")int fixid){
+
+        employ employ=new employ(employid,status,fixid);
 //        employ employ=this.employMapper.selectByPrimaryKey(employid);
-//        this.employMapper.updatestafix(employ);
-//
-//        return null;
-//    }
+        return this.employMapper.updatestafix(employ);
+    }
+
+    @RequestMapping("/updatesta")
+    public int updatesta(@RequestParam("employid")int employid,
+                         @RequestParam("employStatus")String status){
+
+        employ employ=new employ(employid,status);
+//        employ employ=this.employMapper.selectByPrimaryKey(employid);
+        return this.employMapper.updatesta(employ);
+    }
 }

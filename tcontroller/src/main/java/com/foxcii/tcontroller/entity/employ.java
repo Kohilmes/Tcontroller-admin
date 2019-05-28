@@ -105,4 +105,16 @@ public class employ {
 
     public employ() {
     }
+
+    public employ(Integer employid, String employStatus, Integer fixid) {
+        this.employid = employid;
+        this.employStatus = employStatus;
+        this.fixid = fixid;
+    }
+
+    public employ(Integer employid, String employStatus) {
+        this.employid = employid;
+        this.employStatus = employStatus;
+    }
+
 }

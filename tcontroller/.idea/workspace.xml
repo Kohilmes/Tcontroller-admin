@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="251e97c9-1ac8-49d5-a9e5-19257f229bcb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/controller/employController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/employ.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/entity/employ.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/foxcii/tcontroller/mapper/employMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/knowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/controller/employController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/controller/employController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/entity/employ.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/entity/employ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/employMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/foxcii/tcontroller/mapper/employMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/mapper/knowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/knowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix.war" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/controller/employController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/controller/employController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/controller/fixController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/controller/fixController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/controller/userController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/controller/userController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/entity/employ.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/entity/employ.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/mapper/employMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/mapper/employMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/mapper/fixMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/com/foxcii/tcontroller/mapper/fixMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/employMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/employMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/fixMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/fixMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/knowMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/knowMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/userMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mapper/userMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mybatis-generator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/fix/WEB-INF/classes/mybatis-generator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-com.foxcii.tcontroller.TcontrollerApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-com.foxcii.tcontroller.TcontrollerApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/surefire-reports/com.foxcii.tcontroller.TcontrollerApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/com.foxcii.tcontroller.TcontrollerApplicationTests.txt" afterDir="false" />
-    </list>
+    <list default="true" id="251e97c9-1ac8-49d5-a9e5-19257f229bcb" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -67,8 +39,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+            <state relative-caret-position="95">
+              <caret line="5" column="60" lean-forward="true" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -245,6 +217,21 @@
               <item name="tcontroller" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tcontroller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcontroller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="tcontroller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tcontroller" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tcontroller" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -353,12 +340,12 @@
       <workItem from="1558767786592" duration="20258000" />
       <workItem from="1558916258192" duration="15330000" />
       <workItem from="1559018922701" duration="146000" />
-      <workItem from="1559027469978" duration="2301000" />
+      <workItem from="1559027469978" duration="3047000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87041000" />
+    <option name="totallyTimeSpent" value="87787000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -371,9 +358,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1735925" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1735925" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Learn" order="3" />
@@ -392,7 +378,7 @@
       <window_info anchor="bottom" id="Message" order="7" />
       <window_info anchor="bottom" id="Find" order="8" weight="0.3299389" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" weight="0.3286119" />
-      <window_info active="true" anchor="bottom" id="Run" order="10" visible="true" weight="0.3753541" />
+      <window_info anchor="bottom" id="Run" order="10" weight="0.3753541" />
       <window_info anchor="bottom" id="Debug" order="11" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="12" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="13" weight="0.4" />
@@ -400,7 +386,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.24530831" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.24530831" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -766,8 +752,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        <state relative-caret-position="95">
+          <caret line="5" column="60" lean-forward="true" selection-start-line="5" selection-start-column="60" selection-end-line="5" selection-end-column="60" />
         </state>
       </provider>
     </entry>

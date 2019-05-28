@@ -82,4 +82,26 @@ public class employ {
     public void setFixid(Integer fixid) {
         this.fixid = fixid;
     }
+
+    public employ(Integer employid, String employStatus, Integer fixid) {
+        this.employid = employid;
+        this.employStatus = employStatus;
+        this.fixid = fixid;
+    }
+
+    public employ(Integer employid, String employStatus) {
+        this.employid = employid;
+        this.employStatus = employStatus;
+    }
+
+    public employ(Integer employid, String employInfo, String employImg, String employTime, String employStatus, String employAddress, Integer userid, Integer fixid) {
+        this.employid = employid;
+        this.employInfo = employInfo;
+        this.employImg = employImg;
+        this.employTime = employTime;
+        this.employStatus = employStatus;
+        this.employAddress = employAddress;
+        this.userid = userid;
+        this.fixid = fixid;
+    }
 }

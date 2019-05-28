@@ -40,7 +40,7 @@ public class fixController {
     }
 
     @RequestMapping("/deleteByPrimaryKey")
-    public user deleteByPrimaryKey(@RequestParam("fixid")int fixid){
+    public fix deleteByPrimaryKey(@RequestParam("fixid")int fixid){
 
         this.fixMapper.deleteByPrimaryKey(fixid);
 

@@ -98,4 +98,12 @@
         fixid = #{fixid,jdbcType=INTEGER}
         where employid = #{employid,jdbcType=INTEGER}
     </update>
+
+    <update id="updatesta" parameterType="com.foxcii.tcontroller.entity.employ">
+        update employ
+        set employ_status = #{employStatus,jdbcType=VARCHAR}
+        where employid = #{employid,jdbcType=INTEGER}
+    </update>
+
+
 </mapper>

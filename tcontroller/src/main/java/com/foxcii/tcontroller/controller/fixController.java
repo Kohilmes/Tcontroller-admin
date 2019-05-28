@@ -1,6 +1,7 @@
 package com.foxcii.tcontroller.controller;
 
 import com.foxcii.tcontroller.entity.fix;
+import com.foxcii.tcontroller.entity.user;
 import com.foxcii.tcontroller.mapper.fixMapper;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -39,7 +40,7 @@ public class fixController {
     }
 
     @RequestMapping("/deleteByPrimaryKey")
-    public user deleteByPrimaryKey(@RequestParam("fixid")int fixid){
+    public fix deleteByPrimaryKey(@RequestParam("fixid")int fixid){
 
         this.fixMapper.deleteByPrimaryKey(fixid);
 

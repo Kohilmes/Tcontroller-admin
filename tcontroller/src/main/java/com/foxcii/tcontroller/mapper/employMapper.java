@@ -1,6 +1,7 @@
 package com.foxcii.tcontroller.mapper;
 
 import com.foxcii.tcontroller.entity.employ;
+import com.foxcii.tcontroller.entity.fix;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
@@ -19,7 +20,11 @@ public interface employMapper {
 
     List<employ> selectByUserid(Integer userid);
 
+    List<employ> selectAllemploy();
+
     int updateByPrimaryKeySelective(employ record);
 
     int updateByPrimaryKey(employ record);
+
+//    int updatestafix(employ record);
 }

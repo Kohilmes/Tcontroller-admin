@@ -6,6 +6,7 @@
     <result column="fix_name" jdbcType="VARCHAR" property="fixName" />
     <result column="fix_phone" jdbcType="VARCHAR" property="fixPhone" />
     <result column="fix_pwd" jdbcType="VARCHAR" property="fixPwd" />
+    <result column="fix_phone" jdbcType="VARCHAR" property="fixPhone" />
     <result column="fix_info" jdbcType="VARCHAR" property="fixInfo" />
     <result column="fix_grade" jdbcType="VARCHAR" property="fixGrade" />
   </resultMap>
@@ -15,6 +16,11 @@
     from fix
     where fixid = #{fixid,jdbcType=INTEGER}
   </select>
+  <select id="selectAllfix" resultMap="BaseResultMap">
+    select fixid, fix_name, fix_pwd, fix_phone, fix_info, fix_grade
+    from fix
+  </select>
+
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from fix
     where fixid = #{fixid,jdbcType=INTEGER}

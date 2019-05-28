@@ -17,7 +17,7 @@ import java.util.UUID;
 
 @RestController
 @RequestMapping(value = "/user",method = RequestMethod.GET)
-public class userController {
+    public class userController {
 
     @Resource
     private userMapper userMapper;
@@ -188,5 +188,21 @@ public class userController {
     public List<user> user_selectAll(){
         List<user> users=this.userMapper.selectAll();
         return  users;
+    }
+
+    @RequestMapping("/selectByuserId")
+    public user selectByPrimaryKey(@RequestParam("userid")int userid){
+
+        user user=this.userMapper.selectByPrimaryKey(userid);
+
+        return user;
+    }
+
+    @RequestMapping("/deleteByPrimaryKey")
+    public user deleteByPrimaryKey(@RequestParam("userid")int userid){
+
+        this.userMapper.deleteByPrimaryKey(userid);
+
+        return null;
     }
 }

@@ -10,6 +10,7 @@
     <result column="user_info" jdbcType="VARCHAR" property="userInfo"/>
     <result column="wx_id" jdbcType="VARCHAR" property="wxId"/>
   </resultMap>
+  <!--通过userid查询-->
   <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
     select *
     from userinfo
@@ -49,6 +50,9 @@
     select userid,user_name,user_phone,user_address,user_info
     from userinfo
   </select>
+
+
+
 
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
     delete from userinfo

@@ -15,9 +15,19 @@ public class employ {
 
     private String employStatus;
 
+    private String employAddress;
+
     private Integer userid;
 
     private Integer fixid;
+
+    public String getEmployAddress() {
+        return employAddress;
+    }
+
+    public void setEmployAddress(String employAddress) {
+        this.employAddress = employAddress;
+    }
 
     public Integer getEmployid() {
         return employid;

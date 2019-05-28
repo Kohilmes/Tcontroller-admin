@@ -1,6 +1,5 @@
 package com.foxcii.tcontroller.controller;
 
-
 import com.foxcii.tcontroller.entity.employ;
 import com.foxcii.tcontroller.mapper.employMapper;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,4 +39,37 @@ public class employController {
         employ employ=new employ(employinfo,employTime,employAddress,userid);
         return  this.employMapper.insertEmploy(employ);
     }
+
+    @RequestMapping("/selectAllemploy")
+    public List<employ> employ_selectAll(){
+            List<employ> employs=this.employMapper.selectAllemploy();
+            return  employs;
+    }
+
+    @RequestMapping("/selectByemployId")
+    public employ selectByPrimaryKey(@RequestParam("employid")int employid){
+
+        employ employ=this.employMapper.selectByPrimaryKey(employid);
+
+        return employ;
+    }
+
+    @RequestMapping("/deleteByPrimaryKey")
+    public employ deleteByPrimaryKey(@RequestParam("employid")int employid){
+
+        this.employMapper.deleteByPrimaryKey(employid);
+
+        return null;
+    }
+
+//    @RequestMapping("/updatestafix")
+//    public employ updatestafix(@RequestParam("employid")int employid,
+//                               @RequestParam("employStatus")String status,
+//                               @RequestParam("fixid")int fixid){
+//
+//        employ employ=this.employMapper.selectByPrimaryKey(employid);
+//        this.employMapper.updatestafix(employ);
+//
+//        return null;
+//    }
 }
